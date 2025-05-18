@@ -1,0 +1,63 @@
+\doxysection{/home/vitor/\+Desktop/projeto\+EDA/projeto\+EDA\+\_\+\+Fase2/projeto\+EDA\+\_\+\+Fase2/funcoes.c File Reference}
+\hypertarget{funcoes_8c}{}\label{funcoes_8c}\index{/home/vitor/Desktop/projetoEDA/projetoEDA\_Fase2/projetoEDA\_Fase2/funcoes.c@{/home/vitor/Desktop/projetoEDA/projetoEDA\_Fase2/projetoEDA\_Fase2/funcoes.c}}
+
+
+Ficheiro com todas as funcoes relacionadas com os grafos.  
+
+
+{\ttfamily \#include "{}grafos.\+h"{}}\newline
+Include dependency graph for funcoes.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{funcoes_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{funcoes_8c_a1b198f1d7ba33df317294e3a272edc37}\label{funcoes_8c_a1b198f1d7ba33df317294e3a272edc37} 
+void {\bfseries Adicionar\+Adjacencia} (\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*}antena, int destino)
+\item 
+\Hypertarget{funcoes_8c_a573fd35edaafc8db3a494e3c41ab1a61}\label{funcoes_8c_a573fd35edaafc8db3a494e3c41ab1a61} 
+\mbox{\hyperlink{structGrafo}{Grafo}} {\bfseries Carregar\+Antenas\+Do\+Ficheiro} (const char \texorpdfstring{$\ast$}{*}nome\+\_\+ficheiro)
+\item 
+\Hypertarget{funcoes_8c_a53a60b41cb16d25a70c38eae7bf6b0d8}\label{funcoes_8c_a53a60b41cb16d25a70c38eae7bf6b0d8} 
+void {\bfseries Limpar\+Visitados} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo)
+\item 
+\Hypertarget{funcoes_8c_a65f88e073342e0462a591fa013b47e3e}\label{funcoes_8c_a65f88e073342e0462a591fa013b47e3e} 
+void {\bfseries Procura\+Em\+Profundidade} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, int atual, FILE \texorpdfstring{$\ast$}{*}saida)
+\item 
+\Hypertarget{funcoes_8c_a717f67c230953295b8b250a4a7a6b7fe}\label{funcoes_8c_a717f67c230953295b8b250a4a7a6b7fe} 
+void {\bfseries Procura\+Em\+Largura} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, int inicio, FILE \texorpdfstring{$\ast$}{*}saida)
+\item 
+\Hypertarget{funcoes_8c_adb7797600b28880e0a403ff750e55acc}\label{funcoes_8c_adb7797600b28880e0a403ff750e55acc} 
+void {\bfseries Encontrar\+Caminhos\+Rec} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, int atual, int destino, bool visitados\mbox{[}$\,$\mbox{]}, int caminho\mbox{[}$\,$\mbox{]}, int pos, FILE \texorpdfstring{$\ast$}{*}saida, bool \texorpdfstring{$\ast$}{*}caminho\+\_\+encontrado)
+\item 
+\Hypertarget{funcoes_8c_a4ac676ed9450ca38ecf1e082930f4e4b}\label{funcoes_8c_a4ac676ed9450ca38ecf1e082930f4e4b} 
+void {\bfseries Encontrar\+Caminhos} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, int origem, int destino, FILE \texorpdfstring{$\ast$}{*}saida)
+\item 
+\Hypertarget{funcoes_8c_a87ff2b9a2a4af008bfd7c831f3248ad8}\label{funcoes_8c_a87ff2b9a2a4af008bfd7c831f3248ad8} 
+void {\bfseries Mostrar\+Intersecoes} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, char freqA, char freqB, FILE \texorpdfstring{$\ast$}{*}saida)
+\item 
+\Hypertarget{funcoes_8c_a55888c6b477143582e89a3e626ee1b0e}\label{funcoes_8c_a55888c6b477143582e89a3e626ee1b0e} 
+void {\bfseries Calcular\+Interferencias} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, FILE \texorpdfstring{$\ast$}{*}saida)
+\item 
+\Hypertarget{funcoes_8c_aa4fd86e839712d8184d70f2947cd90c2}\label{funcoes_8c_aa4fd86e839712d8184d70f2947cd90c2} 
+void {\bfseries Exportar\+Resultados} (\mbox{\hyperlink{structGrafo}{Grafo}} grafo, const char \texorpdfstring{$\ast$}{*}nome\+\_\+ficheiro)
+\item 
+\Hypertarget{funcoes_8c_ab45bc0fcd8d9647e34bfc073a2c29db9}\label{funcoes_8c_ab45bc0fcd8d9647e34bfc073a2c29db9} 
+void {\bfseries Libertar\+Grafo} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Ficheiro com todas as funcoes relacionadas com os grafos. 
+
+\begin{DoxyAuthor}{Author}
+Vitor Moreira 31553 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+15 de Maio 2025 
+\end{DoxyDate}

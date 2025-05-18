@@ -1,0 +1,30 @@
+=== ANTENAS (6) ===
+0: A @ (7,0)
+1: B @ (4,1)
+2: A @ (1,2)
+3: B @ (5,3)
+4: B @ (1,4)
+5: A @ (4,5)
+
+=== DFS (Antena 0) ===
+Antena A @ (7,0)
+Antena A @ (4,5)
+Antena A @ (1,2)
+
+=== BFS (Antena 0) ===
+Antena A @ (7,0)
+Antena A @ (4,5)
+Antena A @ (1,2)
+
+=== CAMINHOS (0 -> 2) ===
+A(7,0) -> A(4,5) -> A(1,2)
+A(7,0) -> A(1,2)
+
+=== INTERSECOES ===
+A(1,2) - B(1,4)
+A(4,5) - B(4,1)
+
+=== INTERFERENCIAS ===
+(3,2) - Entre B(4,1) e B(1,4)
+(2,3) - Entre B(4,1) e B(1,4)
+(3,4) - Entre A(1,2) e A(4,5)

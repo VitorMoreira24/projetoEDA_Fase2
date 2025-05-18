@@ -1,0 +1,47 @@
+\doxysection{grafos.\+h}
+\hypertarget{grafos_8h_source}{}\label{grafos_8h_source}\index{/home/vitor/Desktop/projetoEDA/projetoEDA\_Fase2/projetoEDA\_Fase2/grafos.h@{/home/vitor/Desktop/projetoEDA/projetoEDA\_Fase2/projetoEDA\_Fase2/grafos.h}}
+\mbox{\hyperlink{grafos_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*****************************************************************/}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ \_CRT\_SECURE\_NO\_WARNINGS}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <stdbool.h>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <string.h>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <math.h>}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ MAX\_LINHAS\ 12}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ MAX\_COLUNAS\ 12}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ MAX\_ANTENAS\ 50}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structAntena}{Antena}}\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{char}\ frequencia;}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{int}\ coluna;}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{int}\ linha;}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{structAdjacencia}{Adjacencia}}*\ conexoes;}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{bool}\ visitada;}
+\DoxyCodeLine{00027\ \}\ \mbox{\hyperlink{structAntena}{Antena}};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structAdjacencia}{Adjacencia}}\ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{int}\ destino;\ \ \textcolor{comment}{//\ {\ucr}ndice\ da\ antena\ adjacente}}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structAdjacencia}{Adjacencia}}*\ proxima;}
+\DoxyCodeLine{00032\ \}\ \mbox{\hyperlink{structAdjacencia}{Adjacencia}};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structGrafo}{Grafo}}\ \{}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{structAntena}{Antena}}\ antenas[MAX\_ANTENAS];}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{int}\ total\_antenas;}
+\DoxyCodeLine{00037\ \}\ \mbox{\hyperlink{structGrafo}{Grafo}};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \mbox{\hyperlink{structGrafo}{Grafo}}\ CarregarAntenasDoFicheiro(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ nome\_ficheiro);}
+\DoxyCodeLine{00040\ \textcolor{keywordtype}{void}\ ProcuraEmProfundidade(\mbox{\hyperlink{structGrafo}{Grafo}}*\ grafo,\ \textcolor{keywordtype}{int}\ inicio,\ FILE*\ saida);}
+\DoxyCodeLine{00041\ \textcolor{keywordtype}{void}\ ProcuraEmLargura(\mbox{\hyperlink{structGrafo}{Grafo}}*\ grafo,\ \textcolor{keywordtype}{int}\ inicio,\ FILE*\ saida);}
+\DoxyCodeLine{00042\ \textcolor{keywordtype}{void}\ EncontrarCaminhos(\mbox{\hyperlink{structGrafo}{Grafo}}*\ grafo,\ \textcolor{keywordtype}{int}\ origem,\ \textcolor{keywordtype}{int}\ destino,\ FILE*\ saida);}
+\DoxyCodeLine{00043\ \textcolor{keywordtype}{void}\ MostrarIntersecoes(\mbox{\hyperlink{structGrafo}{Grafo}}*\ grafo,\ \textcolor{keywordtype}{char}\ freqA,\ \textcolor{keywordtype}{char}\ freqB,\ FILE*\ saida);}
+\DoxyCodeLine{00044\ \textcolor{keywordtype}{void}\ CalcularInterferencias(\mbox{\hyperlink{structGrafo}{Grafo}}*\ grafo,\ FILE*\ saida);}
+\DoxyCodeLine{00045\ \textcolor{keywordtype}{void}\ ExportarResultados(\mbox{\hyperlink{structGrafo}{Grafo}}\ grafo,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ nome\_ficheiro);}
+\DoxyCodeLine{00046\ \textcolor{keywordtype}{void}\ LibertarGrafo(\mbox{\hyperlink{structGrafo}{Grafo}}*\ grafo);}
+\DoxyCodeLine{00047\ }
+
+\end{DoxyCode}

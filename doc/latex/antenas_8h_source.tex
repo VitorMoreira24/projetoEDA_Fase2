@@ -1,0 +1,42 @@
+\doxysection{antenas.\+h}
+\hypertarget{antenas_8h_source}{}\label{antenas_8h_source}\index{/home/vitor/Desktop/projetoEDANOVO./projetoEDA/projetoEDA/projetoEDA/antenas.h@{/home/vitor/Desktop/projetoEDANOVO./projetoEDA/projetoEDA/projetoEDA/antenas.h}}
+\mbox{\hyperlink{antenas_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*****************************************************************/}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <stdbool.h>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <malloc.h>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <string.h>}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ /*****************************************************************/}}
+\DoxyCodeLine{00023\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structAntena}{Antena}}\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{char}\ frequencia;\ \ \ \ \ \ \ \textcolor{comment}{//\ Ex:\ 'A',\ 'B'}}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{int}\ linha,\ coluna;\ \ \ \ \ \textcolor{comment}{//\ Posição\ na\ matriz}}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structAntena}{Antena}}*\ prox;\ \ \ \textcolor{comment}{//\ Próxima\ antena}}
+\DoxyCodeLine{00027\ \}\ \mbox{\hyperlink{antenas_8h_a843ab8b81393e8ebb3eb6b76e349acc2}{Antena}};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{comment}{/*****************************************************************/}}
+\DoxyCodeLine{00037\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structnefastos}{nefastos}}\ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{int}\ x,\ y;}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structnefastos}{nefastos}}*\ prox;}
+\DoxyCodeLine{00040\ \}\mbox{\hyperlink{structnefastos}{nefastos}};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{int}\ MAX\_COLUNAS;}
+\DoxyCodeLine{00043\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{int}\ MAX\_LINHAS;}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{comment}{//\ Protótipos\ das\ funções\ no\ ficheiro\ antenas.c}}
+\DoxyCodeLine{00046\ \mbox{\hyperlink{structAntena}{Antena}}*\ \mbox{\hyperlink{antenas_8h_a0cddd59c73ccb91cdbfaf548746e0d9e}{CriaAntena}}(\textcolor{keywordtype}{char}\ frequencia,\ \textcolor{keywordtype}{int}\ linha,\ \textcolor{keywordtype}{int}\ coluna);}
+\DoxyCodeLine{00047\ \mbox{\hyperlink{structAntena}{Antena}}*\ \mbox{\hyperlink{antenas_8h_ab70e160312f785d6abf44842e8407baf}{InsereOrdenado}}(\mbox{\hyperlink{structAntena}{Antena}}*\ inicio,\ \mbox{\hyperlink{structAntena}{Antena}}*\ novo);}
+\DoxyCodeLine{00048\ \mbox{\hyperlink{structAntena}{Antena}}*\ \mbox{\hyperlink{antenas_8h_ace77b16071a28e33fdd24e89a7d5849a}{RemoveAntena}}(\mbox{\hyperlink{structAntena}{Antena}}*\ inicio,\ \textcolor{keywordtype}{int}\ linha,\ \textcolor{keywordtype}{int}\ coluna);}
+\DoxyCodeLine{00049\ \mbox{\hyperlink{structAntena}{Antena}}*\ \mbox{\hyperlink{antenas_8h_af41a907dbb5cddf621921caf2c478b34}{ProcuraAntena}}(\mbox{\hyperlink{structAntena}{Antena}}*\ inicio,\ \textcolor{keywordtype}{int}\ linha,\ \textcolor{keywordtype}{int}\ coluna);}
+\DoxyCodeLine{00050\ \mbox{\hyperlink{structAntena}{Antena}}*\ \mbox{\hyperlink{antenas_8h_a6712a3faa6702e6373561a397f1809b7}{CarregarAntenasDoFicheiro}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ nome\_ficheiro);}
+\DoxyCodeLine{00051\ \mbox{\hyperlink{structnefastos}{nefastos}}*\ \mbox{\hyperlink{antenas_8h_ad2f7fe193467a02ce38d8583f394007d}{criarEfeitoNefasto}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00052\ \mbox{\hyperlink{structnefastos}{nefastos}}*\ \mbox{\hyperlink{antenas_8h_a227673583dc103cd0d4edd828ad37b60}{calcularNefastos}}(\mbox{\hyperlink{structAntena}{Antena}}*\ lista);}
+\DoxyCodeLine{00053\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{antenas_8h_acd5150ac505a2e639de16a92b61980ac}{mostrarMatrizAntenas}}(\mbox{\hyperlink{structAntena}{Antena}}*\ lista);}
+\DoxyCodeLine{00054\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{antenas_8h_a58ee45e0f49c3964368bfa2f15aba4c5}{mostrarMatrizNefastos}}(\mbox{\hyperlink{structAntena}{Antena}}*\ lista\_antenas,\ \mbox{\hyperlink{structnefastos}{nefastos}}*\ lista\_nefastos);}
+\DoxyCodeLine{00055\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{antenas_8h_ac72d6ee151bdb904ac5e6704a4137aae}{libertarListaNefasto}}(\mbox{\hyperlink{structnefastos}{nefastos}}*\ lnefasto);}
+\DoxyCodeLine{00056\ \textcolor{comment}{//void\ DestroiListaAntenas(Antena**\ h);}}
+
+\end{DoxyCode}

@@ -1,0 +1,102 @@
+\doxysection{/home/vitor/\+Desktop/projeto\+EDA/projeto\+EDA\+\_\+\+Fase2/projeto\+EDA\+\_\+\+Fase2/grafos.h File Reference}
+\hypertarget{grafos_8h}{}\label{grafos_8h}\index{/home/vitor/Desktop/projetoEDA/projetoEDA\_Fase2/projetoEDA\_Fase2/grafos.h@{/home/vitor/Desktop/projetoEDA/projetoEDA\_Fase2/projetoEDA\_Fase2/grafos.h}}
+
+
+Ficheiro header com todas os dados, structs e prototipos de funcoe.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+Include dependency graph for grafos.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grafos_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grafos_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structAntena}{Antena}}
+\item 
+struct \mbox{\hyperlink{structAdjacencia}{Adjacencia}}
+\item 
+struct \mbox{\hyperlink{structGrafo}{Grafo}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{grafos_8h_af08ec37a8c99d747fb60fa15bc28678b}\label{grafos_8h_af08ec37a8c99d747fb60fa15bc28678b} 
+\#define {\bfseries \+\_\+\+CRT\+\_\+\+SECURE\+\_\+\+NO\+\_\+\+WARNINGS}
+\item 
+\Hypertarget{grafos_8h_ab44f6d43935e7b204b295865fc8c1edc}\label{grafos_8h_ab44f6d43935e7b204b295865fc8c1edc} 
+\#define {\bfseries MAX\+\_\+\+LINHAS}~12
+\item 
+\Hypertarget{grafos_8h_ad624bf76d9366faecf9041ef6ffffcb9}\label{grafos_8h_ad624bf76d9366faecf9041ef6ffffcb9} 
+\#define {\bfseries MAX\+\_\+\+COLUNAS}~12
+\item 
+\Hypertarget{grafos_8h_ae04de1912d3477cbb50e7efbd807b7a5}\label{grafos_8h_ae04de1912d3477cbb50e7efbd807b7a5} 
+\#define {\bfseries MAX\+\_\+\+ANTENAS}~50
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{grafos_8h_a843ab8b81393e8ebb3eb6b76e349acc2}\label{grafos_8h_a843ab8b81393e8ebb3eb6b76e349acc2} 
+typedef struct \mbox{\hyperlink{structAntena}{Antena}} {\bfseries Antena}
+\item 
+\Hypertarget{grafos_8h_ad1a707f5a55de6e25322735fd69b8a96}\label{grafos_8h_ad1a707f5a55de6e25322735fd69b8a96} 
+typedef struct \mbox{\hyperlink{structAdjacencia}{Adjacencia}} {\bfseries Adjacencia}
+\item 
+\Hypertarget{grafos_8h_adab04f64457aac52a13e71e40915bd43}\label{grafos_8h_adab04f64457aac52a13e71e40915bd43} 
+typedef struct \mbox{\hyperlink{structGrafo}{Grafo}} {\bfseries Grafo}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{grafos_8h_a573fd35edaafc8db3a494e3c41ab1a61}\label{grafos_8h_a573fd35edaafc8db3a494e3c41ab1a61} 
+\mbox{\hyperlink{structGrafo}{Grafo}} {\bfseries Carregar\+Antenas\+Do\+Ficheiro} (const char \texorpdfstring{$\ast$}{*}nome\+\_\+ficheiro)
+\item 
+\Hypertarget{grafos_8h_aff836b991a342bc44ae2e35261b89422}\label{grafos_8h_aff836b991a342bc44ae2e35261b89422} 
+void {\bfseries Procura\+Em\+Profundidade} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, int inicio, FILE \texorpdfstring{$\ast$}{*}saida)
+\item 
+\Hypertarget{grafos_8h_a717f67c230953295b8b250a4a7a6b7fe}\label{grafos_8h_a717f67c230953295b8b250a4a7a6b7fe} 
+void {\bfseries Procura\+Em\+Largura} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, int inicio, FILE \texorpdfstring{$\ast$}{*}saida)
+\item 
+\Hypertarget{grafos_8h_a4ac676ed9450ca38ecf1e082930f4e4b}\label{grafos_8h_a4ac676ed9450ca38ecf1e082930f4e4b} 
+void {\bfseries Encontrar\+Caminhos} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, int origem, int destino, FILE \texorpdfstring{$\ast$}{*}saida)
+\item 
+\Hypertarget{grafos_8h_a87ff2b9a2a4af008bfd7c831f3248ad8}\label{grafos_8h_a87ff2b9a2a4af008bfd7c831f3248ad8} 
+void {\bfseries Mostrar\+Intersecoes} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, char freqA, char freqB, FILE \texorpdfstring{$\ast$}{*}saida)
+\item 
+\Hypertarget{grafos_8h_a55888c6b477143582e89a3e626ee1b0e}\label{grafos_8h_a55888c6b477143582e89a3e626ee1b0e} 
+void {\bfseries Calcular\+Interferencias} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, FILE \texorpdfstring{$\ast$}{*}saida)
+\item 
+\Hypertarget{grafos_8h_aa4fd86e839712d8184d70f2947cd90c2}\label{grafos_8h_aa4fd86e839712d8184d70f2947cd90c2} 
+void {\bfseries Exportar\+Resultados} (\mbox{\hyperlink{structGrafo}{Grafo}} grafo, const char \texorpdfstring{$\ast$}{*}nome\+\_\+ficheiro)
+\item 
+\Hypertarget{grafos_8h_ab45bc0fcd8d9647e34bfc073a2c29db9}\label{grafos_8h_ab45bc0fcd8d9647e34bfc073a2c29db9} 
+void {\bfseries Libertar\+Grafo} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Ficheiro header com todas os dados, structs e prototipos de funcoe. 
+
+\begin{DoxyAuthor}{Author}
+Vitor Moreira 31553 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+30 de Mar{\ucr}o 2025 
+\end{DoxyDate}
